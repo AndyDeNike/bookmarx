@@ -1,0 +1,937 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>Bkmarx</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#main" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="Bkmarx" class="md-header-nav__button md-logo" aria-label="Bkmarx">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Bkmarx
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Main
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Bkmarx" class="md-nav__button md-logo" aria-label="Bkmarx">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Bkmarx
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Main
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="." class="md-nav__link md-nav__link--active">
+      Main
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio" class="md-nav__link">
+    Audio ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    Music
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music-production" class="md-nav__link">
+    Music Production
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#piano" class="md-nav__link">
+    Piano
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    Radio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health" class="md-nav__link">
+    Health ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Health ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foam-rolling" class="md-nav__link">
+    Foam Rolling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neck" class="md-nav__link">
+    Neck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posture" class="md-nav__link">
+    Posture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running" class="md-nav__link">
+    Running
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tai-chi" class="md-nav__link">
+    Tai Chi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-body" class="md-nav__link">
+    Upper Body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-body" class="md-nav__link">
+    Lower Body
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food" class="md-nav__link">
+    Food ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Food ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooking" class="md-nav__link">
+    Cooking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hockey" class="md-nav__link">
+    Hockey ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming" class="md-nav__link">
+    Programming ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common" class="md-nav__link">
+    Common
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    GitHub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    Javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swift" class="md-nav__link">
+    Swift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bs" class="md-nav__link">
+    BS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C++
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programs" class="md-nav__link">
+    Programs ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    Video ◈
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="black/" class="md-nav__link">
+      Black
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="programs/" class="md-nav__link">
+      Programs
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio" class="md-nav__link">
+    Audio ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    Music
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music-production" class="md-nav__link">
+    Music Production
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#piano" class="md-nav__link">
+    Piano
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    Radio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health" class="md-nav__link">
+    Health ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Health ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foam-rolling" class="md-nav__link">
+    Foam Rolling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neck" class="md-nav__link">
+    Neck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posture" class="md-nav__link">
+    Posture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running" class="md-nav__link">
+    Running
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tai-chi" class="md-nav__link">
+    Tai Chi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-body" class="md-nav__link">
+    Upper Body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-body" class="md-nav__link">
+    Lower Body
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food" class="md-nav__link">
+    Food ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Food ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooking" class="md-nav__link">
+    Cooking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hockey" class="md-nav__link">
+    Hockey ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming" class="md-nav__link">
+    Programming ◈
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming ◈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common" class="md-nav__link">
+    Common
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    GitHub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    Javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swift" class="md-nav__link">
+    Swift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bs" class="md-nav__link">
+    BS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C++
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programs" class="md-nav__link">
+    Programs ◈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    Video ◈
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="main">Main</h1>
+<h2 id="audio"><strong>Audio ◈</strong></h2>
+<h4 id="music">Music</h4>
+<p><a href="https://www.youtube.com/channel/UCJhjE7wbdYAae1G25m0tHAA">Cafe Music BGM channel - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=AvhplYM46Fc">ｎｉｎｔｅｎｄｏ　ａｎｄ　ｌｏｆｉ - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=2Ee8fGffyoU&amp;list=PLkXcSHka9KavvrevOofVQZOTHesJeWTgv">Relaxing Video Game Music (Gameboy/Gameboy Color Edition) - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=JIDVDJnKx7E&amp;t=3958s">Calm &amp; Relaxing Mario Kart Music Mix - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=RSa1OUhsEnc">Relaxing Music from Final Fantasy Series - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=0DuckVy97Gg">Calm &amp; Relaxing Sonic Music Mix - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=eXdGrQZhMcs&amp;list=PLIKC2UBcyfT4y_zyJKQgsq7L40jrFUkfP">Video Game Music for Studying 1 - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=2EY-PlaJnbM&amp;list=PLiU36l-VAX_6sofGTOxMyRfLiwrjQCGck">Relaxing Video Game Music for 3 Hours (Vol. 9) - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=TTXFKD7fMlE">💦 Chillhop Essentials Summer 2018 • jazz beats &amp; chill hiphop - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=niQr479bvQo">【Cafe Music】Jazz &amp; Bossa Nova Instrumental Music For Relax,Work,Study - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=io85zAxiA0E">🔴 Lounge Jazz Radio - Relaxing Jazz Music - Music For Work &amp; Study - Live Stream 24/7 - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=ryyPW754sJQ">1 Hour of Relaxing Rainy Day Animal Crossing Music + Rain Sounds - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=kNRIFhkYONc">70s Japanese Jazz Mix Vol.2 (Jazz-funk, Soul Jazz, Rare groove, Drum Breaks..) - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=v5FWaWilijs">3 Hours of Relaxing Tropical Hawaiian Music Meditation, Sleep, Study, Relaxation, Background - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=9FmKdjRhoy4">Relaxing Final Fantasy VII Music - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=jnRVtkw7wsk">YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=5C_TVWbZYt0">ozoyo - where to go (ft. wun two) - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=jITsT4GpHWc">Koto Vortex - Koto Vortex II: Arcadia (1996) [Full Album] - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=B7yAiF1lkIw">Yoichiro Yoshikawa (吉川洋一郎) - The Miracle Planet (地球大紀行) (1987) [Full Album] - YouTube</a></p>
+<p><a href="https://play.google.com/music/listen#/artists">Artists - Google Play Music</a></p>
+<p><a href="http://www.vidtomp3.com/">Convert Youtube to MP3 &amp; Download Youtube Videos - Free Downloader</a></p>
+<p><a href="https://soundcloud.com/stream">Your stream on SoundCloud - Hear the world’s sounds</a></p>
+<h4 id="music-production">Music Production</h4>
+<p><a href="https://www.youtube.com/watch?v=NU3Yi9zqYas">FL Studio 12 COMPLETE Basic Tutorial - YouTube</a></p>
+<p><a href="https://www.onlinevideoconverter.com/video-converter">YouTube Converter &amp; Downloader - Convert to MP3, MP4, AVI</a></p>
+<h4 id="piano">Piano</h4>
+<p><a href="http://www.youtube.com/watch?v=iTHuKTMl2rg">How to play To Zanarkand from Final FantasyX on Piano 1 of 3 - YouTube</a></p>
+<p><a href="http://www.youtube.com/watch?v=mllA7LtuKuQ">How to Play: The Prelude (Final Fantasy) for Piano (annotations!) - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=oD3BZ9xVfPI">The Musiah Piano Method Video - The Best Way To Learn Piano / Keyboard Music Online - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=c5af1nGF5fc">How to play piano: Lesson #3 Piano Lounge: Andrew Furmanczyk - YouTube</a></p>
+<p><a href="http://makingmusicfun.net/pdf/sheet_music/fur_elise_piano.pdf">canon-in-d - fur_elise_piano.pdf</a></p>
+<p><a href="https://www.youtube.com/watch?v=M6td_6EYIIs&amp;feature=youtu.be&amp;t=122">Minecraft - "Wet Hands" (Piano Tutorial) - YouTube</a></p>
+<p><a href="http://www.wikihow.com/Read-Music">8 Ways to Read Music - wikiHow</a></p>
+<p><a href="https://www.youtube.com/watch?v=wI5kovMfsOA">Minecraft: Wet Hands (Piano Cover + Sheets) [HD] - YouTube</a></p>
+<p><a href="http://www.pianoscales.org/">Piano scales - learn how to play scales on piano</a></p>
+<p><a href="http://server.agarrado.net/animemusic/death-note-rems-theme.pdf?AWSAccessKeyId=AKIAJOOUXNQVYS467B6Q&amp;Expires=1471069878&amp;Signature=79jjWpFtHb67LEDT7b0sLerf7t4%3D">Rem's Theme - death-note-rems-theme.pdf</a></p>
+<h4 id="radio">Radio</h4>
+<p><a href="http://www.kgoradio.com/">KGO 810 News, Talk &amp; Traffic KGO-AM</a></p>
+<p><a href="http://www.npr.org/">NPR : National Public Radio : News &amp; Analysis, World, US, Music &amp; Arts : NPR</a></p>
+<h2 id="health"><strong>Health ◈</strong></h2>
+<h4 id="foam-rolling">Foam Rolling</h4>
+<p><a href="https://www.youtube.com/watch?v=uyBcYI-BBN8">Foam Roll Series - How to Foam Roll - Best Foam Rolling Exercises - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=khC5J1lkC7s">Full-Body Rolling Out Routine Perfect Form With Ashley Borden - YouTube</a></p>
+<h4 id="neck">Neck</h4>
+<p><a href="https://www.youtube.com/watch?v=2NOsE-VPpkE">Neck Pain Stretches &amp; Exercises - Ask Doctor Jo - YouTube</a></p>
+<h4 id="posture">Posture</h4>
+<p><a href="http://www.builtlean.com/2011/10/06/correct-rounded-shoulders-from-office-work-5-corrective-exercises/">Correct Rounded Shoulders From Office Work: 5 Exercises - BuiltLean</a></p>
+<p><a href="https://www.youtube.com/watch?v=PExMvVPSfeo">How to Improve Posture for Optimal Performance - YouTube</a></p>
+<h4 id="running">Running</h4>
+<p><a href="https://www.youtube.com/watch?v=b2q_0qQcBZw">How to Stretch Before Running - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=9upLtceYDkY&amp;feature=youtu.be&amp;t=51">Stretching: After Running Stretches - YouTube</a></p>
+<p><a href="http://www.runnersworld.com/injury-prevention-recovery/best-post-race-standing-stretches">Best Post-Race Standing Stretches Runner's World</a></p>
+<p><a href="http://www.wikihow.com/Prepare-For-a-Long-Distance-Run">How to Prepare For a Long Distance Run: 11 Steps</a></p>
+<p><a href="https://www.youtube.com/watch?v=9upLtceYDkY">Stretching: After Running Stretches - YouTube</a></p>
+<h4 id="tai-chi">Tai Chi</h4>
+<p><a href="https://www.youtube.com/watch?v=7D7qAQ720x8&amp;feature=youtu.be&amp;t=1001">From BodyWisdom's Tai Chi for Beginners with Chris Pei - Intro, Warm-up &amp; Part 1 Yang 24 form - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=C9FkTb-3uaM&amp;feature=youtu.be&amp;t=990">THe BEST FULL 4 Hours Tai Chi Tutorial for Beginners - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=C9FkTb-3uaM">THe BEST FULL 4 Hours Tai Chi Tutorial for Beginners - YouTube</a></p>
+<h4 id="upper-body">Upper Body</h4>
+<p><a href="https://www.youtube.com/watch?v=TkII8-Q4gbw">Upper Body Strength Training and Core Workout - Abs and Upper Body Supersets - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=vkKCVCZe474">8 Min Abs Workout how to have six pack - YouTube</a></p>
+<p><a href="https://www.fitnessblender.com/videos/upper-body-strength-training-and-core-workout-abs-and-upper-body-supersets">Upper Body Strength Training and Core Workout - Abs and Upper Body Supersets Fitness Blender</a></p>
+<p><a href="https://www.youtube.com/watch?v=CRGrcSDhynQ">No Equipment Upper Body Workout for Great Arms, Shoulders and Upper Back - YouTube</a></p>
+<p><a href="http://www.livestrong.com/article/392170-how-often-should-i-do-push-ups/">How Often Should I Do Push Ups? LIVESTRONG.COM</a></p>
+<p><a href="http://www.menshealth.com/fitness/worlds-best-pushup-workouts">The World's Best Pushup Workouts Men's Health</a></p>
+<h4 id="lower-body">Lower Body</h4>
+<p><a href="http://www.sportsinjuryclinic.net/sport-injuries/hip-groin-pain/groin-strain/strengthening-groin-strain">Groin Strain Exercises - stretching, strengthening &amp; sports specific</a></p>
+<p><a href="http://www.sportsinjuryclinic.net/rehabilitation-exercises/hip-groin-exercises">Hip &amp; Groin Exercises</a></p>
+<p><a href="http://www.newhealthadvisor.com/Knee-Feels-Like-It-Needs-to-Pop.html">My Knee Feels Like It Needs to Pop, Why? New Health Advisor</a></p>
+<p><a href="https://www.youtube.com/watch?v=LDhKVtkfnsg">Runner's Knee Stretches - YouTube</a></p>
+<p><a href="https://www.verywellfit.com/hamstring-stretches-2696359">6 Simple Stretches for Tight Hamstrings</a></p>
+<p><a href="http://www.builtlean.com/2011/10/06/correct-rounded-shoulders-from-office-work-5-corrective-exercises/">5 Exercises to Correct Rounded Shoulders from Office Work</a></p>
+<p><a href="http://www.realsimple.com/health/fitness-exercise/stretching-yoga/stretching-exercises-00100000098867/">6 Full-Body Stretching Exercises RealSimple.com</a></p>
+<p><a href="http://www.menshealth.com/fitness/daily-exercises">The Exercises You Should Do Every Day Men's Health</a></p>
+<p><a href="http://bretcontreras.com/5-things-you-should-do-everyday/">5 Things You Should Do Everyday – Bret Contreras</a></p>
+<p><a href="http://running.competitor.com/2014/08/training/running-101-how-often-should-you-run_12188">Running 101: How Often Should You Run? Competitor.com</a></p>
+<p><a href="http://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20057916">Exercise: How much do I need every day? - Mayo Clinic</a></p>
+<p><a href="https://www.youtube.com/watch?v=uPO-zST-7EE">Wrist, Hand &amp; Finger Stretching Routine - Active Isolated Stretching - YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=sB4lXUhRfMU">Finger Fitness 1 :Be a Genius! - YouTube</a></p>
+<p><a href="http://onemillionskates.com/fuelling-up-for-hockey/">Fuelling up for hockey — Why Carbohydrates are a Hockey Player’s Best Friend - OneMillionSkates.com</a></p>
+<p><a href="http://www.active.com/articles/how-to-ice-an-injury-properly">How to ice an injury properly ACTIVE</a></p>
+<p><a href="https://www.youtube.com/watch?v=EiRC80FJbHU">Hand + Wrist Exercises For Gamers - YouTube</a></p>
+<p><a href="https://greatist.com/move/stretches-for-tight-shoulders">Shoulder Stretches: 16 Simple Moves to Fix Tight Shoulders Greatist</a></p>
+<p><a href="https://www.youtube.com/watch?v=2NOsE-VPpkE">Neck Pain Stretches &amp; Exercises - Ask Doctor Jo - YouTube</a></p>
+<p><a href="http://www.artofmanliness.com/2014/08/05/undo-the-damage-of-sitting/">7 Simple Exercises That Undo the Damage of Sitting The Art of Manliness</a></p>
+<h2 id="food"><strong>Food ◈</strong></h2>
+<h4 id="cooking">Cooking</h4>
+<p><a href="http://allrecipes.com/recipe/218797/hot-dog-onions/">Hot Dog Onions Recipe - Allrecipes.com</a></p>
+<p><a href="https://damndelicious.net/2015/12/27/asian-garlic-noodles/">Asian Garlic Noodles - Damn Delicious</a></p>
+<p><a href="http://www.eatingwell.com/nutrition_health/nutrition_news_information/10_everyday_superfoods">10 Everyday Superfoods - EatingWell</a></p>
+<p><a href="http://www.webmd.com/diet/eat-smart-healthier-brain">Best Brain Foods for Brain Function, Health, and Memory</a></p>
+<p><a href="http://www.hpb.gov.sg/HOPPortal/health-article/2638">Build a Healthy Food Foundation</a></p>
+<h2 id="hockey"><strong>Hockey ◈</strong></h2>
+<p><a href="https://www.nhl.com/">Official Site of the National Hockey League NHL.com</a></p>
+<p><a href="https://hockey.fantasysports.yahoo.com/hockey/86080">Andrew's Amazing League Fantasy Hockey Yahoo! Sports</a></p>
+<p><a href="https://www.dailyfaceoff.com/hockey-player-news/">NHL Hockey Player News - Daily Faceoff</a></p>
+<p><a href="https://www.dailyfaceoff.com/nhl-weekly-schedule/">NHL Weekly Schedule - Games by Week: 10-21-19 to 10-27-19</a></p>
+<p><a href="http://www.hockeybuzz.com/">HockeyBuzz.com - NHL Rumors</a></p>
+<p><a href="http://www.fearthefin.com/">Fear The Fin, a San Jose Sharks community</a></p>
+<p><a href="http://corsica.hockey/">Corsica Home</a></p>
+<p><a href="https://www.tsn.ca/nhl">NHL - National Hockey League Teams, Scores, Stats, News, Standings, Rumours</a></p>
+<p><a href="http://dobberhockey.com/frozenpool_compare.php">DobberHockey - NHL Player Compare</a></p>
+<p><a href="http://www.dobberhockey.com/Table/Hockey-home/Hockey-Rankings/">Hockey Rankings DobberHockey – Your Fantasy Hockey Source</a></p>
+<p><a href="https://www.hockey-reference.com/">NHL Stats, History, Scores, &amp; Records Hockey-Reference.com</a></p>
+<p><a href="http://games.espn.com/fhl/clubhouse?leagueId=10503&amp;teamId=4&amp;seasonId=2017">San Jose Sauces - Free Fantasy Hockey - ESPN</a></p>
+<p><a href="https://dobberhockey.com/">DobberHockey – Your Fantasy Hockey Source</a></p>
+<p><a href="https://www.youtube.com/user/NHLVideo">NHL - YouTube</a></p>
+<p><a href="https://www.corsicahockey.com/nhl/players/nhl-player-ratings-rankings">NHL Player Ratings, NHL Player Rankings</a></p>
+<p><a href="http://yoursports.stream/">Stream Sports Live</a></p>
+<p><a href="https://sportsurge.net/#/groups/0">Sportsurge</a></p>
+<h2 id="information"><strong>Information ◈</strong></h2>
+<p><a href="https://news.ycombinator.com/news">Hacker News</a></p>
+<p><a href="https://www.livescience.com/">Live Science: The Most Interesting Articles, Mysteries &amp; Discoveries</a></p>
+<p><a href="http://www.nature.com/news/">Nature News &amp; Comment</a></p>
+<p><a href="http://www.redorbit.com/">redOrbit - Science News, Space, Technology, Health</a></p>
+<p><a href="https://www.sciencenews.org/">Science News Daily news articles, blogs and biweekly magazine covering all areas of science</a></p>
+<p><a href="http://www.stumbleupon.com/su/2jUzjo/1ec1xd-5E:eQSBlL-y/www.folj.com/folj.com/lateral/">Lateral Thinking Puzzles - Preconceptions - StumbleUpon</a></p>
+<h2 id="programming"><strong>Programming ◈</strong></h2>
+<p><a href="https://trello.com/">Boards Trello</a></p>
+<p><a href="https://repl.it/languages">repl.it - Online REPL, Compiler &amp; IDE</a></p>
+<p><a href="https://stackoverflow.com/">Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</a></p>
+<p><a href="https://www.codewars.com/dashboard">Home Codewars</a></p>
+<p><a href="https://jsfiddle.net/">Create a new fiddle - JSFiddle</a></p>
+<p><a href="https://www.nearlyfreespeech.net/">NearlyFreeSpeech.NET Web Hosting</a></p>
+<p><a href="https://app.netlify.com/sites/jovial-lalande-2ecd67/deploys">Deploys jovial-lalande-2ecd67</a></p>
+<p><a href="https://zeit.co/andydenike">Dashboard - ZEIT</a></p>
+<p><a href="https://domains.google.com/m/registrar/?rapt=AEjHL4P-QyODTJetdSKoi2sP_HVujEZSdGyEDFc4ThIlSFdBTeIqMlqNZ5knjG9odD3svYVA_kBosJGk9ByrQr-KJMawRaobAA">Google Domains - My domains</a></p>
+<p><a href="https://dashboard.heroku.com/apps">Personal apps Heroku</a></p>
+<p><a href="http://gitignore.io/">gitignore.io - Create Useful .gitignore Files For Your Project</a></p>
+<p><a href="https://www.jsdelivr.com/rawgit">Migrate from RawGit to jsDelivr</a></p>
+<p><a href="https://rawgit.com/">RawGit</a></p>
+<p><a href="http://exercism.io/how-it-works/newbie">How it Works: For New Developers - exercism.io</a></p>
+<p><a href="https://www.hackerrank.com/dashboard">Dashboard HackerRank</a></p>
+<p><a href="https://codebeautify.org/jsonviewer">Best JSON Viewer and JSON Beautifier Online</a></p>
+<p><a href="https://nbviewer.jupyter.org/">nbviewer</a></p>
+<p><a href="https://www.gatsbyjs.org/">GatsbyJS</a></p>
+<h4 id="bootstrap">Bootstrap</h4>
+<p><a href="https://fontawesome.com/">Font Awesome</a></p>
+<h4 id="common">Common</h4>
+<p><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide - no deep !@#$%^&amp;*!</a></p>
+<h4 id="android">Android</h4>
+<p><a href="http://web.stanford.edu/class/cs193a/videos.shtml?ref=hackr.io">CS 193A: Android Application Development - Sections</a></p>
+<p><a href="https://moocfi.github.io/courses/2013/programming-part-1/">Object-Oriented programming with Java, part I</a></p>
+<h4 id="github">GitHub</h4>
+<p><a href="https://github.com/">GitHub</a></p>
+<p><a href="https://htmlpreview.github.io/">GitHub &amp; BitBucket HTML Preview</a></p>
+<h4 id="css">CSS</h4>
+<p><a href="http://html-color-codes.info/colors-from-image/">Get Colors from Image</a></p>
+<h4 id="javascript">Javascript</h4>
+<p><a href="http://www.reddit.com/r/learn_js_in_seattle/comments/1tziaa/new_study_group_starting_january_2014/">>&gt;&gt;New Study Group Starting January 2014!&lt;&lt;&lt; : learn_js_in_seattle</a></p>
+<p><a href="http://www.wrox.com/WileyCDA/WroxTitle/Professional-JavaScript-for-Web-Developers-3rd-Edition.productCd-1118026691.html">Web: Professional JavaScript for Web Developers, 3rd Edition - Book Information and Code Download - Wrox</a></p>
+<p><a href="file:///C:/Users/Andrew/Desktop/Archive/Education/Programming/Tutorials/Eloquent%20JavaScript/contents.html">Contents -- Eloquent JavaScript</a></p>
+<p><a href="http://javascriptissexy.com/how-to-learn-javascript-properly/">How to Learn JavaScript Properly JavaScript is Sexy</a></p>
+<h4 id="swift">Swift</h4>
+<p><a href="https://manitobaninja.wordpress.com/2016/01/22/a-collection-of-swift-tutorials/">A collection of Swift tutorials. Manitoba Ninja</a></p>
+<h4 id="bs">BS</h4>
+<p><a href="https://bootstrapcreative.com/resources/flexbox-cheat-sheet/">Flexbox Cheat Sheet PDF &amp; Bootstrap 4 Flex - Free Download (2019)</a></p>
+<h4 id="c">C++</h4>
+<p><a href="http://www.learncpp.com/">Learn C++</a></p>
+<h2 id="programs"><strong>Programs ◈</strong></h2>
+<p><a href="http://www.speedtest.net/?test-2">Speedtest.net by Ookla - The Global Broadband Speed Test</a></p>
+<p><a href="https://mullvad.net/en/">Mullvad VPN</a></p>
+<p><a href="http://ip-api.com/">IP-API.com - Geolocation API</a></p>
+<p><a href="http://www.convertfiles.com/convert/ebook/EPUB-to-PDF.html">Convert Files - Free EPUB to PDF converter. Free online ebook converter.</a></p>
+<p><a href="https://answers.yahoo.com/question/index?qid=20071214081725AAZ7A2e">How to extract .uha file ?</a></p>
+<p><a href="http://www.yopmail.com/en/">YOPmail - Disposable Email Address</a></p>
+<p><a href="http://www.listentoyoutube.com/">Youtube to MP3 Converter Fast, Free, and Easy by ListentoYouTube.com</a></p>
+<p><a href="http://audio.online-convert.com/convert-to-ogg">Online OGG converter</a></p>
+<p><a href="http://www.catacombae.org/hfsexplorer/">Catacombae - HFSExplorer</a></p>
+<p><a href="http://convert2mp3.net/en/">convert2mp3.net - Online Video converter - Convert Youtube, Dailymotion, Vevo, Clipfish and MyVideo videos online to MP3, MP4 and more formats - download your music for free</a></p>
+<p><a href="http://anything2mp3.com/">Online SoundCloud &amp; YouTube to MP3 Converter and Downloader Anything2MP3</a></p>
+<p><a href="https://www.mail.com/#.23140-header-logo1-1">Free email accounts Register today at mail.com</a></p>
+<p><a href="https://imgbb.com/">ImgBB — Upload Image — Free Image Hosting</a></p>
+<p><a href="https://justbeamit.com/">JustBeamIt - file transfer made easy</a></p>
+<h2 id="video"><strong>Video ◈</strong></h2>
+<p><a href="https://www.aljazeera.com/live/">LIVE - Al Jazeera English</a></p>
+<p><a href="https://watch.cbc.ca/live/channel/ottawa">CBC TV - Live</a></p>
+<p><a href="http://www.cbsnews.com/live/">CBSN - Live Streaming Video News Channel - CBS News</a></p>
+<p><a href="http://www.cctv-america.com/livenews">Watch Live CCTV America</a></p>
+<p><a href="http://english.cntv.cn/live/">CCTV News Live - CDN Live Streaming - CCTV Program online</a></p>
+<p><a href="http://cctv.cntv.cn/lm/learningchinese/program/index.shtml">More programs, Growing up with Chinese, CNTV English, CCTV News</a></p>
+<p><a href="http://discoveryhouse3.wixsite.com/discovery">discovery</a></p>
+<p><a href="https://www.disneyplus.com/">Disney+ Movies and Shows</a></p>
+<p><a href="https://www.hulu.com/">Watch TV and movies on Xbox, PS3, Apple TV, and more Hulu</a></p>
+<p><a href="https://www.hbonow.com/">Home HBO NOW</a></p>
+<p><a href="http://www.netflix.com/WiHome">Netflix</a></p>
+<p><a href="http://www.pbs.org/show/frontline/episodes/">PBS: Videos</a></p>
+<p><a href="http://www.pbs.org/">PBS: Public Broadcasting Service</a></p>
+<p><a href="http://www3.nhk.or.jp/nhkworld/en/live/">TV Live - NHK WORLD - English</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
